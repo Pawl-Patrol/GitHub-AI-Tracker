@@ -4,6 +4,6 @@ This script will track the amount of repositories currently trending, which invo
 
 # Running
 
-1. `npm install`
-2. `OPENAI_API_KEY` in `.env`
-3. `npm run start`
+1. Run `npm install`
+2. Setup `OPENAI_API_KEY` in `.env`
+3. Run `npm run start`
