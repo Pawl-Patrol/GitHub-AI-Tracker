@@ -1,6 +1,6 @@
 # GitHub AI Tracker
 
-This script will track the amount of repositories involving AI currently (daily) trending. Ironically, it uses AI to do so.
+This script will track the amount of repositories, involving AI, currently (daily) trending. Ironically, it uses AI to do so.
 
 # Example
 
