@@ -20,7 +20,8 @@ export async function openaiPrompt(input: string) {
 
 export async function evaluateRepositories(repositories: Repository[]) {
   const mapped = repositories.map(
-    (repo, index) => `\n${index + 1}. ${repo.name} - ${repo.description}`
+    (repo, index) =>
+      `\n${index + 1}. ${repo.name} - ${repo.description ?? "no description"}`
   );
   const prompt = `This is a list of repositories from Github trending. They are all in the form of "name - description". For each repository, please tell me how likely it is, that the repository is about artificial intelligence. For every repository in the list, output "true" if it is likely and "false" otherwise. The input is:${mapped}`;
   const result = await openaiPrompt(prompt);
